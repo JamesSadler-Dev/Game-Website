@@ -1,0 +1,27 @@
+
+.CSS-headerbar{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 50px;
+    font-weight: 550;
+    font-size: large;
+    }
+
+
+    .CSS-headerbar a{
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px 0px 4px black;
+    }    
+
+
+.CSS-headerbar a:hover{
+    color: orange;
+    }    
+
