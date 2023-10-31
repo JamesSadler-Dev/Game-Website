@@ -1,24 +1,43 @@
-
+//5ww2q
 let moneyElement= document.getElementById("user-score");
 let gameButton= document.querySelector(".CSS-clickgamebutton")
 let farmBuy= document.querySelector(".CSS-buybutton")
 let farmCount= document.querySelector(".JS-farmcount")
 let farmPriceEle= document.querySelector(".CSS-itemcost");
 let farmPrice = 10;
-let currentMoney;
-let moneyRate= 0;
+
+
+let gameData = {
+    "clicks": 0,
+    "farmPrice":10,
+}
 
 if (!moneyElement.innerHTML)
     moneyElement.innerHTML= Number(0);
 
-gameButton.addEventListener("click",incrementScore)
+
+gameButton.addEventListener("click",() => 
+gameData["clicks"] += 1
+);
+
 farmBuy.addEventListener("click",buyFarm)
 
 setInterval(updateMoney, 1000)
 
+
 function updateMoney(){
-    moneyElement.innerHTML = Number(moneyElement.innerHTML) + moneyRate;
+    let toAdd = 0;
+    toAdd += gameData["clicks"];
+    //  gameData["clicks"] = 0;
+
+    let money = Number(moneyElement.innerText)
+
+    moneyElement.innerText = money + toAdd;
 }
+
+
+
+/*
 
 function incrementScore(){
     moneyElement.innerHTML = Number(moneyElement.innerHTML) + 1
@@ -35,3 +54,4 @@ function buyFarm(){
         moneyRate += 1;
     }
 }
+*/

@@ -21,8 +21,16 @@
 .CSS-catpic{
     width: 1fr;
     height:500px;
-    border: 1px solid black;
+    border: 1rem solid black;
     border-radius: 50px;
+}
+
+.CSS-catpic:active{
+    width: 1fr;
+    height:500px;
+    border: 5px solid orange;
+    border-radius: 50px;
+
 }
 
 .CSS-gamesidebar{
@@ -31,7 +39,7 @@
     align-items: center;
     width: 200px;
     font-size: large;
-    border: 1px solid black;
+    border: .5rem solid black;
     background-color: whitesmoke;
 
 }
@@ -86,6 +94,10 @@
     background:linear-gradient(purple,gray);
 }
 
+.CSS-clickgamebutton:active{
+    background-color: orange;
+}
+
 .CSS-itemcost{
     color: red;
 }
@@ -97,6 +109,6 @@
 .CSS-itembuycontainer{
     display: grid;
     justify-content: center;
-
+    border:2rem;
 }
 
