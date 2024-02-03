@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "game-website"
+version = "0.1.0"
+description = "Clicker game website by James Sadler"
+authors = ["James Sadler"]
+license = "BSD-2-Clause"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+Flask = "^3.0.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

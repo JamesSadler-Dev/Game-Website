@@ -4,6 +4,8 @@
     justify-content:center;
     border: 1px solid black;
     box-shadow: inset 0px 0px 2px black;
+    margin-top: 1.5rem;
+    background-color: white;
 }
 
 
@@ -21,14 +23,14 @@
 .CSS-catpic{
     width: 1fr;
     height:500px;
-    border: 1rem solid black;
+    border: 2px solid black;
     border-radius: 50px;
 }
 
 .CSS-catpic:active{
     width: 1fr;
     height:500px;
-    border: 5px solid orange;
+    border: 2px solid orange;
     border-radius: 50px;
 
 }
