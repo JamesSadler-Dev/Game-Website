@@ -9,10 +9,16 @@
     caret-color: transparent;
 }
 
-#farmpic{
-    width: 8rem;
-    padding-left: 1px;
+.upgradepic{
+    width: 9rem;
+
 }
+
+#factoryPic{
+    padding-top: 2rem;
+}
+
+
 .CSS-gameheader{
     display: flex;
     justify-content: space-between;
@@ -46,38 +52,6 @@
     border: .5rem solid black;
     background-color: whitesmoke;
 }
-
-@media (max-width: 670px) {
-    .CSS-catpic{
-        width: 1fr;
-        height:360px;
-        border: 1px solid black;
-        border-radius: 50px;
-    }
-}
-
-
-@media (min-width: 1000px) {
-    .CSS-catpic{
-        width: 1fr;
-        height:500px;
-        border-radius: 50px;
-    }
-
-    .CSS-gamesidebar{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 1fr;
-    }
-
-    .CSS-gamewindow{
-        display: flex;
-        justify-content:space-around;
-        border: 1px solid black;
-        box-shadow: inset 0px 0px 2px black;
-    }
-} 
 
 .CSS-userscore{
     display: flex;
@@ -115,3 +89,37 @@
     justify-content: center;
     border:2rem;
 }
+
+/* Media Queries */
+@media (max-width: 670px) {
+    .CSS-catpic{
+        width: 1fr;
+        height:360px;
+        border: 1px solid black;
+        border-radius: 50px;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .CSS-catpic{
+        width: 1fr;
+        height:500px;
+        border-radius: 50px;
+    }
+
+    .CSS-gamesidebar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 1fr;
+    }
+
+    .CSS-gamewindow{
+        display: flex;
+        justify-content:space-around;
+        border: 1px solid black;
+        box-shadow: inset 0px 0px 2px black;
+    }
+} 
+
