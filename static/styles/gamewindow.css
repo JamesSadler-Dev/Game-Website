@@ -1,16 +1,18 @@
-
 .CSS-gamewindow{
     display: flex;
     justify-content:center;
-    border: 1px solid black;
+    border: 2px solid black;
     box-shadow: inset 0px 0px 2px black;
     margin-top: 1.5rem;
     background-color: white;
     padding: 3px;
+    caret-color: transparent;
 }
 
-
-
+#farmpic{
+    width: 8rem;
+    padding-left: 1px;
+}
 .CSS-gameheader{
     display: flex;
     justify-content: space-between;
@@ -19,7 +21,6 @@
     padding-left: 5px;
     padding-right: 5px;
 }
-
 
 .CSS-catpic{
     width: 1fr;
@@ -44,7 +45,6 @@
     font-size: large;
     border: .5rem solid black;
     background-color: whitesmoke;
-
 }
 
 @media (max-width: 670px) {
@@ -61,7 +61,6 @@
     .CSS-catpic{
         width: 1fr;
         height:500px;
-        border: 1px solid black;
         border-radius: 50px;
     }
 
@@ -78,7 +77,6 @@
         border: 1px solid black;
         box-shadow: inset 0px 0px 2px black;
     }
-
 } 
 
 .CSS-userscore{
@@ -94,13 +92,16 @@
 }
 
 .CSS-clickgamebutton{
-    background:linear-gradient(purple,gray);
+    background:gray;
 }
 
 .CSS-clickgamebutton:active{
     background-color: orange;
 }
 
+.CSS-clickgamebutton:hover{
+    cursor:pointer;
+}
 .CSS-itemcost{
     color: red;
 }
@@ -114,4 +115,3 @@
     justify-content: center;
     border:2rem;
 }
-
