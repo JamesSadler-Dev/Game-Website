@@ -1,6 +1,6 @@
 <h1>GAME WEBSITE</h1>
 
-<h2>A clicker game made in JS,CSS,HTML with a python backend </h2>
+<h2>A clicker game made in JS,CSS,HTML with a python (flask) backend </h2>
 
 Usage: 
 
@@ -9,5 +9,7 @@ Usage:
 `poetry install`
 
 2.run server with python flask
+
+`python -m flask run`
 
 
