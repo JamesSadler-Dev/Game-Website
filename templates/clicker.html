@@ -1,0 +1,39 @@
+
+{% extends "template.html" %}
+
+    {% block styles %}
+        <link rel="stylesheet" href="./static/styles/clicker/gamewindow.css">
+    {% endblock %}
+
+    {% block body %}
+        <div class="CSS-gamewindow">
+            <button class="CSS-clickgamebutton">
+                <img src="./static/images/clicker/cat.jpg" alt="click" class="CSS-catpic">
+            </button>
+            
+            <div class="CSS-gamesidebar">
+                <p id="score">Current Money:<br>
+                    <span class="CSS-userscore"id="user-score"></span>
+                </p>
+                <br>
+                <div class="CSS-itembuycontainer">
+                    <img src="/static/images/clicker/farm.png" alt="farm" class="upgradepic">
+                    <p>Farm Cost: <span class="CSS-itemcost">10</span></p>
+                    <span class="CSS-ownedcount">Owned: <span class="JS-farmcount"></span></span>
+                    <button class="CSS-buybutton">Buy</button>
+                </div>
+                <div class="CSS-itembuycontainer">
+                    <img src="/static/images/clicker/Factory.png" alt="factory" class="upgradepic" id="factoryPic">
+                    <p>Factory Cost: <span class="CSS-facitemcost">150</span></p>
+                    <span class="CSS-facownedcount">Owned: <span class="JS-faccount"></span></span>
+                    <button class="CSS-facbuybutton">Buy</button>
+                </div>
+                <br>
+                <p></p>
+            </div>
+        </div>
+    {% endblock %}
+
+    {% block scripts %}
+        <script src="/static/scripts/clicker/clicker.js"></script>
+    {% endblock %}

@@ -6,4 +6,7 @@ app = Flask(__name__)
 def index():
     return render_template("index.html")
 
+@app.route("/clicker")
+def clicker():
+    return render_template("clicker.html")
 

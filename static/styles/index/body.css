@@ -1,0 +1,32 @@
+.CSS-allgames{
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CSS-games{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    font-size: x-large;
+    font-weight: 500;
+    border: 1px black solid;
+}
+
+.CSS-gamedescription{
+    flex-direction: column;
+}
+.CSS-games div{
+    margin: 1rem;
+}
+
+.CSS-games img{
+    height: 20rem;
+    width: 20rem;
+    border: 1px black solid;
+}
+
+#gametitle{
+    font-weight: 600;
+}

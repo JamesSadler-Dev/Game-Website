@@ -1,53 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./static/styles/general.css">
-    <link rel="stylesheet" href="./static/styles/header.css">
-    <link rel="stylesheet" href="./static/styles/gamewindow.css">
-    <title>CoolClicker</title>
-</head>
-<body>
-    <header>
-        <div class="CSS-headerbar">
-            <a href="google.com">The Super Cool Game</a>
-        </div>
-    </header>
+{% extends "template.html" %}
 
-    <main>
-
-        <div class="CSS-gamewindow">
-            <button class="CSS-clickgamebutton">
-                <img src="./static/OIG (1).jpg" alt="click" class="CSS-catpic">
-            </button>
-            
-            <div class="CSS-gamesidebar">
-                <p id="score">Current Money:<br>
-                    <span class="CSS-userscore"id="user-score"></span>
-                </p>
-                <br>
-                <div class="CSS-itembuycontainer">
-                    <img src="/static/farm.png" alt="farm" class="upgradepic">
-                    <p>Farm Cost: <span class="CSS-itemcost">10</span></p>
-                    <span class="CSS-ownedcount">Owned: <span class="JS-farmcount"></span></span>
-                    <button class="CSS-buybutton">Buy</button>
-                </div>
-                <div class="CSS-itembuycontainer">
-                    <img src="/static/Factory.png" alt="factory" class="upgradepic" id="factoryPic">
-                    <p>Factory Cost: <span class="CSS-facitemcost">150</span></p>
-                    <span class="CSS-facownedcount">Owned: <span class="JS-faccount"></span></span>
-                    <button class="CSS-facbuybutton">Buy</button>
-                </div>
-                <br>
-                <p></p>
+{% block styles %}
+ <link rel="stylesheet" href="/static/styles/index/body.css">
+{% endblock %}
+{% block body %}
+    <section class="CSS-allgames">
+        <div class="CSS-games">
+            <div class="CSS-gamedescription">
+                <p id="gametitle">Clicker Game</p>
+                <p>Click the cat to get money and buy buildings!<br>
+                    Earn more money, buy upgrades!</p>
+            </div>
+            <div>
+                <a href="/clicker"><img src="/static/images/clicker/cat.jpg" alt="clicker game"></a>
             </div>
         </div>
-    </main>
-    <footer>
-
-    </footer>
-    <script src="/static/index.js"></script>
-</body>
-</html>
+        <div class="CSS-games">
+            <div class="CSS-gamedescription">
+                <p id="gametitle">Clicker Game</p>
+                <p>Click the cat to get money and buy buildings!<br>
+                Earn more money, buy upgrades!</p>
+            </div>
+            <div>
+                <a href="/clicker"><img src="/static/images/clicker/cat.jpg" alt="clicker game"></a>
+            </div>
+        </div>
+    </section>
+{% endblock %}
