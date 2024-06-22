@@ -10,3 +10,6 @@ def index():
 def clicker():
     return render_template("clicker.html")
 
+@app.route("/redorblack")
+def red_or_black():
+    return render_template("redorblack.html")

@@ -19,6 +19,7 @@
     font-size: x-large;
     font-weight: 500;
     border: 1px black solid;
+    padding: 1px;
 }
 
 .CSS-gamedescription{
@@ -36,4 +37,27 @@
 
 #gametitle{
     font-weight: 600;
+}
+
+.CSS-games p{
+    width:14rem;
+}
+
+@media (min-width:1500px) {
+    .CSS-games p{
+        width:25rem;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width:585px) {
+    .CSS-games p{
+        width:10rem;
+        font-size: 1rem;
+    }
+    
+    .CSS-games img{
+        height:12rem;
+        width:12rem;
+    }
 }
