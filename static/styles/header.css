@@ -1,6 +1,7 @@
 
 .CSS-headerbar{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -8,20 +9,28 @@
     right: 0;
     left: 0;
     top: 0;
-    height: 50px;
+    height: 60px;
     font-weight: 550;
     font-size: large;
-    }
+    color: white;
+    padding: 1px;
+}
 
-
-    .CSS-headerbar a{
+#header-title{
+    text-shadow: 1px 1px 1px red;
+    font-size: 2rem;
+}
+.CSS-headerbar a{
     text-decoration: none;
     color: white;
-    text-shadow: 0px 0px 4px black;
-    }    
+}    
 
+.CSS-headerbar p{
+    text-decoration: none;
+    color: white;
+}    
 
 .CSS-headerbar a:hover{
-    color: orange;
-    }    
+color: orange;
+}    
 

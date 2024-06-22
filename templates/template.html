@@ -8,12 +8,14 @@
     <link rel="stylesheet" href="./static/styles/general.css">
     {% block styles %}
     {% endblock %}
+    {% block title %}
     <title>James' Games</title>
+    {% endblock %}
 </head>
 <body>
     <header>
         <div class="CSS-headerbar">
-            <a href="/">Home</a>
+            <a href="/"><p id="header-title">James' Games</p></a>
         </div>
     </header>
 
@@ -22,7 +24,7 @@
         {% endblock %}
     </main>
     <footer>
-
+        &copy James Sadler 2024
     </footer>
         {% block scripts %}
 
