@@ -11,7 +11,6 @@
 
 .upgradepic{
     width: 9rem;
-
 }
 
 #factoryPic{
@@ -41,7 +40,6 @@
     height:500px;
     border: 2px solid orange;
     border-radius: 50px;
-
 }
 
 .CSS-gamesidebar{
@@ -63,11 +61,6 @@
     font-weight: 700;
 }
 
-.CSS-ownedcount{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-
 .CSS-clickgamebutton:active{
     background-color: orange;
 }
@@ -85,7 +78,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
     border:2rem;
+}
+
+.CSS-itembuycontainer p{
+    margin-bottom: .5rem;
+    font-weight: 500;
+}
+
+.CSS-itembuycontainer button{
+    margin-top: .2rem;
+    width:3rem;
+    height:2rem;
+    font-weight: bold;
 }
 
 /* Media Queries */
@@ -120,4 +126,7 @@
         box-shadow: inset 0px 0px 2px black;
     }
 } 
+
+
+
 

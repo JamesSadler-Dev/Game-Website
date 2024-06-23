@@ -1,0 +1,53 @@
+.CSS-gamewindow{
+    background-color: white;
+    margin-top: 2rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 0px 8px red;
+    padding-top: 1rem;
+}
+
+#CSS-gametitle{
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 1px red;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+
+.CSS-game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.CSS-betbuttons{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
+    height: 3.5rem;
+}
+
+.CSS-betbuttons:hover{
+    cursor:pointer;
+}
+#CSS-gambling-result{
+    height:20rem;
+    width: 20rem;
+}
+
+.CSS-gambling-stats{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+#CSS-red{
+    color: red;
+}
