@@ -110,17 +110,23 @@ const play = (participant) => {
     checkWinner()
 }
 
+const win = () => {
+    money.innerHTML = Math.round(parseInt(money.innerHTML) + (currentBetModifier * 1.5))
+    newGameReady()
+}
 
+const lose = () => {
+    money.innerHTML = money.innerHTML - currentBetModifier
+    newGameReady()
+}
 const checkWinner= () => {
     if (playerCount > dealerCount && dealerStaying){
         if (playerCount > 21){
             playerHand.innerHTML = "Player: BUST!"
-            money.innerHTML = money.innerHTML - currentBetModifier
-            newGameReady()
+            lose()
         } else {
             playerHand.innerHTML = "Player: Winner!"
-            money.innerHTML = Math.round(parseInt(money.innerHTML) + (currentBetModifier * 1.5))
-            newGameReady()
+            win()
         }
     }else if (playerCount == 21 && dealerCount == 21){
         playerHand.innerHTML = "TIE!"
@@ -128,20 +134,16 @@ const checkWinner= () => {
         newGameReady()
     } else if (playerCount == 21){
         playerHand.innerHTML = "Player: BLACKJACK!"
-        money.innerHTML = Math.round(parseInt(money.innerHTML) + (currentBetModifier * 1.5))
-        newGameReady()
+        win()
     } else if (dealerCount > 21){
         dealerHand.innerHTML = "Dealer: BUST!"
-        money.innerHTML = Math.round(parseInt(money.innerHTML) + (currentBetModifier * 1.5))
-        newGameReady()
+        win()
     } else if (playerCount > 21) {
         playerHand.innerHTML = "Player: BUST!"
-        money.innerHTML = money.innerHTML - currentBetModifier
-        newGameReady()
+        lose()
     } else if (dealerCount == 21){
         dealerHand.innerHTML = "Dealer: BLACKJACK!"
-        money.innerHTML = money.innerHTML - currentBetModifier
-        newGameReady()
+        lose()
     }
 }
 
