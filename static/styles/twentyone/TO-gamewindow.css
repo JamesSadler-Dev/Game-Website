@@ -34,6 +34,18 @@
     font-weight: 700;
     height: 3rem;
     width: 20rem;
+    cursor: pointer;
+    background-image: linear-gradient(rgb(201, 201, 201),rgb(233, 232, 232));
+}
+
+.CSS-start-greyedout{
+    margin-bottom: 1rem;    
+    font-size: 2rem;
+    font-weight: 700;
+    height: 3rem;
+    width: 20rem;
+    opacity: 60%;
+    color: lightgray;
 }
 
 .CSS-betbuttons:hover{
@@ -45,6 +57,7 @@
     height: 10rem;
     align-content: center;
     font-weight: 700;
+    border:  1px black solid;
 }
 
 .CSS-gambling-stats{
@@ -61,6 +74,7 @@
 #CSS-red{
     color: red;
     border: 3px red solid;
+    background-color: white;
 }
 
 #CSS-black{
@@ -100,6 +114,7 @@
     font-size: 2rem;
     margin: 1rem;
     padding:5px;
+    cursor: pointer;
 }
 
 .CSS-active-betmod{
@@ -114,4 +129,5 @@
     color:red;
     border: 2px solid red;
     margin-top: .3rem;
+    background-color: white;
 }
