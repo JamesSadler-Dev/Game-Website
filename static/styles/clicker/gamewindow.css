@@ -124,6 +124,9 @@
         justify-content:space-around;
         border: 1px solid black;
         box-shadow: inset 0px 0px 2px black;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        box-shadow: 0px 0px 5px red;
     }
 } 
 

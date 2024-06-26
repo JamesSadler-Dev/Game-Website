@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+{% block styles %}
+<link rel="stylesheet" href="/static/styles/redorblack/gamewindow.css">
+{% endblock %}
+{% block title %}
+<title>JamesGames- Red Or Black</title>
+{% endblock %}
+
+{% block body %}
+    <section class="CSS-gamewindow">
+            <div class="CSS-game">
+                <p id="CSS-gametitle">RED OR BLACK</p>
+                <p id="CSS-gambling-result"></p>
+                <div class="CSS-gambling-stats">
+                    <span class="CSS-boldtext">Current Money:</span><span id="money"></span><br>
+                    <span class="CSS-boldtext">Win Streak:</span><span id="winstreak">0</span><br>
+                </div>
+                <button id="CSS-red" class="CSS-betbuttons">Bet Red!</button>
+                <button id="CSS-black" class="CSS-betbuttons">Bet Black!</button>
+                <button id="CSS-resetgame" class="CSS-betbuttons">Reset</button>
+
+           </div>
+    </section>
+{% endblock %}
+
+{% block scripts %}
+    <script src="/static/scripts/redorblack/redorblack.js"></script>
+{% endblock %}

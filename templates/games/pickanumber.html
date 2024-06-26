@@ -1,0 +1,37 @@
+{% extends "template.html" %}
+{% block styles %}
+<link rel="stylesheet" href="/static/styles/pickanumber/PAN-gamewindow.css">
+{% endblock %}
+{% block title %}
+<title>JamesGames-Pick a Number</title>
+{% endblock %}
+
+{% block body %}
+    <section class="CSS-gamewindow">
+            <div class="CSS-game">
+                <p id="CSS-gametitle">PICK A NUMBER</p>
+                <p id="CSS-gambling-result"></p>
+                <div class="CSS-gambling-stats">
+                    <span class="CSS-boldtext">Current Money:</span><span id="money" class="CSS-boldtext">0</span><br>
+                    <span class="CSS-boldtext">Win Streak:</span><span id="winstreak" class="CSS-boldtext">0</span><br>
+                </div>
+                <p id="CSS-bet-title" class="CSS-boldertext">Make Your Bet</p>
+                <div class="CSS-betbuttons-div">
+                <button id="CSS-1" class="CSS-betbuttons">1</button>
+                <button id="CSS-2" class="CSS-betbuttons">2</button>
+                <button id="CSS-3" class="CSS-betbuttons">3</button>
+                <button id="CSS-4" class="CSS-betbuttons">4</button>
+                <button id="CSS-5" class="CSS-betbuttons">5</button>
+                <button id="CSS-6" class="CSS-betbuttons">6</button>
+                <button id="CSS-7" class="CSS-betbuttons">7</button>
+                <button id="CSS-8" class="CSS-betbuttons">8</button>
+                <button id="CSS-9" class="CSS-betbuttons">9</button>
+                <button id="CSS-10" class="CSS-betbuttons">10</button>
+                </div>
+                <button id="CSS-resetbutton">Reset Game</button>
+           </div>
+    </section>
+{% endblock %}
+{% block scripts %}
+    <script src="/static/scripts/pickanumber/pickanumber.js"></script>
+{% endblock %}

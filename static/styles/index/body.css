@@ -30,8 +30,8 @@
 }
 
 .CSS-games img{
-    height: 20rem;
-    width: 20rem;
+    height: 18rem;
+    width: 18rem;
     border: 1px black solid;
 }
 
@@ -44,6 +44,11 @@
 
 .CSS-games p{
     width:14rem;
+    margin-top: 1rem;
+}
+
+.CSS-gametext{
+    margin-top: 2rem;
 }
 
 @media (min-width:1500px) {

@@ -8,8 +8,16 @@ def index():
 
 @app.route("/clicker")
 def clicker():
-    return render_template("clicker.html")
+    return render_template("games/clicker.html")
 
 @app.route("/redorblack")
 def red_or_black():
-    return render_template("redorblack.html")
+    return render_template("games/redorblack.html")
+
+@app.route("/pickanumber")
+def pick_a_number():
+    return render_template("games/pickanumber.html")
+
+@app.route("/twentyone")
+def twentyone():
+    return render_template("games/twentyone.html")

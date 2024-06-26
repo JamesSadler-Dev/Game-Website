@@ -5,25 +5,49 @@
 {% endblock %}
 {% block body %}
     <section class="CSS-allgames">
-        <div class="CSS-games">
+        <article class="CSS-games">
             <div class="CSS-gamedescription">
                 <a href="/clicker"><p id="gametitle">Clicker Game</p></a>
-                <p>Click the cat to get money and buy buildings!<br>
+                <p class="CSS-gametext">Click the cat to get money and buy buildings!<br>
                     Earn more money, buy more buildings. Upgrade your buildings and get rich!</p>
             </div>
             <div>
                 <a href="/clicker"><img src="/static/images/clicker/cat.jpg" alt="clicker game"></a>
             </div>
-        </div>
-        <div class="CSS-games">
+        </article>
+
+        <article class="CSS-games">
             <div class="CSS-gamedescription">
                 <a href="/redorblack"><p id="gametitle">Red or Black</p></a>
-                <p>Risk it all for double or nothing!<br>
+                <p class="CSS-gametext">Risk it all on red or black.<br>
                 The ultimate gambling experience, earn millions or lose it all!</p>
             </div>
             <div>
-                <a href="/redorblack"><img src="/static/images/clicker/cat.jpg" alt="clicker game"></a>
+                <a href="/redorblack"><img src="/static/images/clicker/cat.jpg" alt="Red or black game"></a>
             </div>
-        </div>
+        </article>
+
+        <article class="CSS-games">
+            <div class="CSS-gamedescription">
+                <a href="/pickanumber"><p id="gametitle">Pick a Number</p></a>
+                <p>Pick the correct number out of 10 to win the grand prize!<br>
+                Will you be the lucky winner?</p>
+            </div>
+            <div>
+                <a href="/pickanumber"><img src="/static/images/clicker/cat.jpg" alt="Pick a number game"></a>
+            </div>
+        </article>
+
+        <article class="CSS-games">
+            <div class="CSS-gamedescription">
+                <a href="/twentyone"><p id="gametitle">Twenty-One</p></a>
+                <p>The classic card game- try to get the highest number you can without going bust!<br>
+                </p>
+            </div>
+            <div>
+                <a href="/twentyone"><img src="/static/images/clicker/cat.jpg" alt="twenty-one game"></a>
+            </div>
+        </article>
+
     </section>
 {% endblock %}
