@@ -8,11 +8,11 @@ const betMod30Button = document.querySelector("#CSS-30")
 const reset = document.querySelector("#CSS-resetgame")
 const hitButton = document.querySelector("#CSS-hit")
 const startButton = document.querySelector("#CSS-start")
+const stayButton = document.querySelector("#CSS-stay")
 
 let currentBetModifier = 20
 const startingCash = 100
 let handStarted = false
-let playerStaying = false
 let gameFinished = false
 let dealerStaying = false
 let playerCount = 0
@@ -24,7 +24,6 @@ const startingState = () => {
     money.innerHTML = startingCash
     currentBetModifier = 20
     handStarted = false
-    playerStaying = false
     dealerStaying = false
     playerCount = 0
     dealerCount = 0
@@ -43,7 +42,6 @@ const newGameReady = () => {
     console.log("setting up new game")
     startButton.setAttribute("class","CSS-betbuttons")
     handStarted = false
-    playerStaying = false
     dealerStaying = false
     gameFinished= true
     playerCount = 0
@@ -51,6 +49,9 @@ const newGameReady = () => {
     playerCards = 0
     dealerCards = 0
     hitButton.removeEventListener("click",hit)
+    stayButton.removeEventListener("click",stay)
+    hitButton.setAttribute("class","CSS-start-greyedout")
+    stayButton.setAttribute("class","CSS-start-greyedout")
     startButton.addEventListener("click",startGame)
 }
 
@@ -160,12 +161,14 @@ const startGame = () => {
         hit()
     }
 
+    hitButton.setAttribute("class","CSS-betbuttons")
+    stayButton.setAttribute("class","CSS-betbuttons")
     hitButton.addEventListener("click",hit)
+    stayButton.addEventListener("click",stay)
     startButton.removeEventListener("click",startGame)
 }
 
 const hit = () => {
-
     play(playerHand)
     checkWinner()
 
@@ -176,6 +179,17 @@ const hit = () => {
             play(dealerHand)
     }
 }
+}
+
+const stay = () => {
+    while (dealerCount < playerCount){
+        play(dealerHand)
+
+        if (dealerCount > playerCount && dealerCount <= 21){
+            dealerHand.innerHTML= "Dealer: Win!"
+            lose()
+        }
+    }
 }
 
 startingState()
